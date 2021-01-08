@@ -1,174 +1,267 @@
-/* @media( min-width:480px){
-    Body {
-        max-width:768px;
-        margin:auto;
-        } */
+/* mobile */
+@media( max-width:480px){
 
-#A {
-    height: 75px;
-    width: 100%;
-    line-height: 75px;
-    background-color: blue;
-    text-align: center;
-    /* margin-top: 20px; */
-}
-#B {
-    height: 150px;
-    width: 100%;
-    line-height: 75px;
-    background-color: red;
-    text-align: center;
-    /* padding-top: 75px; */
-}
-#C {
-    height: 125px;
-    width: 100%;
-    line-height: 125px;
-    background-color: goldenrod;
-    text-align: center;
-
-}
-#D {
-    height: 125px;
-    width: 100%;
-    line-height: 75px;
-    background-color: lawngreen;
-    text-align: center;
-}
-#E {
-    height: 250px;
-    width: 50%;
-    float: left;
-    line-height: 75px;
-    background-color: purple;
-    text-align: center;
-
-}
-#F {
-    height: 250px;
-    width: 50%;
-    line-height: 75px;
-    background-color: cyan;
-    text-align: center;
-    /* margin-left: 240px; */
-    /* position: relative;
-    bottom: 250px; */
-    float: right;
-
-}
-#G {
-    height: 250px;
-    width: 50%;
-    float: left;
-    line-height: 75px;
-    background-color: salmon;
-    text-align: center;
-    /* position: relative;
-    bottom: 250px; */
-}
-#H {
-    height: 250px;
-    width: 50%;
-    line-height: 75px;
-    background-color: lightblue;
-    text-align: center;
-    float: right;
-
-}
-#I {
-    height: 80px;
-    width: 100%;
-    line-height: 75px;
-    background-color: orange;
-    text-align: center;
-    float: right;
-}
-
-@media( min-width:768px){
-    /* Body {
-        max-width:960px;
-        margin:auto;
-        } */
-        
-        
+    main {
+        display: grid;
+        height: 1055px;
+        width: 480px;
+        grid-template-columns: 1fr 1fr;   
+        grid-template-rows: 7.11fr, 14.22fr,11.85fr, 11.85fr, 23.70fr, 23.70fr, 7.58fr;
+        grid-template-areas: 
+        "A A"
+        "B B"
+        "C C"
+        "D D"
+        "E F"
+        "G H"
+        "I I";
+    }
+    
     #A {
-        height: 100px;
-        width: 100%;
         line-height: 75px;
         background-color: blue;
         text-align: center;
-        /* margin-top: 20px; */
+        grid-area: A; 
     }
+    
     #B {
-        height: 600px;
-        width: 20%;
         line-height: 75px;
         background-color: red;
         text-align: center;
-        float: left;
-        /* padding-top: 75px; */
+        grid-area: B; 
     }
+    
     #C {
-        height: 200px;
-        width: 40%;
         line-height: 125px;
         background-color: goldenrod;
         text-align: center;
-        float: left;
-    
+        grid-area: C; 
     }
+    
     #D {
-        height: 200px;
-        width: 40%;
         line-height: 75px;
         background-color: lawngreen;
         text-align: center;
-        float: right;
-        
+        grid-area: D; 
     }
+    
     #E {
-        height: 250px;
-        width: 20%;
         line-height: 75px;
         background-color: purple;
         text-align: center;
-        float: left;
-
-    
+        grid-area: E; 
     }
+    
     #F {
-        height: 250px;
-        width: 20%;
         line-height: 75px;
         background-color: cyan;
         text-align: center;
-        float: left;
-
-    
+        grid-area: F; 
     }
+    
     #G {
-        height: 250px;
-        width: 20%;
         line-height: 75px;
         background-color: salmon;
         text-align: center;
-        float: left;
-
+        grid-area: G; 
     }
+    
     #H {
-        height: 250px;
-        width: 20%;
         line-height: 75px;
         background-color: lightblue;
         text-align: center;
-    
+        grid-area: H; 
     }
+    
     #I {
-        height: 150px;
-        width: 80%;
         line-height: 75px;
         background-color: orange;
         text-align: center;
+        grid-area: I; 
     }
-
-}
+    
+    }
+    /* tablet */
+    @media( max-width:900px) and (min-width:600px){
+    
+        main {
+            display: grid;
+            height: 1055px;
+            width: 480px;
+            grid-template-columns: 1fr 1fr;   
+            grid-template-rows: 7.11fr, 14.22fr,11.85fr, 11.85fr, 23.70fr, 23.70fr, 7.58fr;
+            grid-template-areas: 
+            "A A"
+            "B B"
+            "C C"
+            "D D"
+            "E F"
+            "G H"
+            "I I";
+        }
+        
+        #A {
+            line-height: 75px;
+            background-color: rgb(251, 255, 0);
+            text-align: center;
+            grid-area: A; 
+            }
+    
+        #B {
+            line-height: 75px;
+            background-color: rgb(25, 211, 155);
+            text-align: center;
+            grid-area: B; 
+            }
+    
+        #C {
+            line-height: 125px;
+            background-color: rgb(204, 70, 8);
+            text-align: center;
+            grid-area: C; 
+            }
+    
+        #D {
+            line-height: 75px;
+            background-color: rgb(4, 5, 75);
+            text-align: center;
+            grid-area: D; 
+            }
+    
+        #E {
+            line-height: 75px;
+            background-color: rgba(10, 247, 101, 0.596);
+            text-align: center;
+            grid-area: E; 
+            }
+    
+        #F {
+            line-height: 75px;
+            background-color: rgb(187, 236, 185);
+            text-align: center;
+            grid-area: F; 
+            }
+    
+        
+        #G {
+            line-height: 75px;
+            background-color: rgb(250, 27, 2);
+            text-align: center;
+            grid-area: G; 
+            }
+        
+        #H {
+            line-height: 75px;
+            background-color: rgb(160, 73, 33);
+            text-align: center;
+            grid-area: H;    
+            }
+        
+        #I {
+            line-height: 75px;
+            background-color: rgb(16, 171, 243);
+            text-align: center;
+            grid-area: I; 
+            }
+        
+        }
+        
+    /* Desk Top */
+    @media( min-width:768px){
+            
+    main  {
+        display: grid; 
+        height: 700px;
+        width: 960px;
+        grid-template-columns: 20.8% 19.8% 19.8% 19.8% 19.8%;
+        grid-template-rows:14.29% 28.57% 35.71% 21.43%;
+        grid-template-areas: 
+    
+        " A A A A A "
+        " B C C D D "
+        " B E F G H "
+        " B I I I I ";
+    }
+        #A {
+            line-height: 75px;
+            background-color: blue;
+            text-align: center; 
+            grid-area: A; 
+    
+       } 
+    
+        #B { 
+            line-height: 75px;
+            background-color: red;
+            text-align: center;
+            grid-area: B; 
+        } 
+    
+        #C {
+            /* height: 200px;
+            width: 40%; */
+            line-height: 125px;
+            background-color: goldenrod;
+            text-align: center;
+            float: left;
+            grid-area: C; 
+        }
+    
+        #D {
+            /* height: 200px;
+            width: 40%; */
+            line-height: 75px;
+            background-color: lawngreen;
+            text-align: center;
+            float: right;
+            grid-area: D; 
+        }
+    
+        #E {
+            /* height: 250px;
+            width: 20%; */
+            line-height: 75px;
+            background-color: purple;
+            text-align: center;
+            float: left;
+            grid-area: E; 
+        }
+    
+        #F {
+            /* height: 250px;
+            width: 20%; */
+            line-height: 75px;
+            background-color: cyan;
+            text-align: center;
+            float: left;
+            grid-area: F; 
+        }
+    
+        #G {
+            /* height: 250px;
+            width: 20%; */
+            line-height: 75px;
+            background-color: salmon;
+            text-align: center;
+            float: left;
+            grid-area: G; 
+        }
+    
+        #H {
+            /* height: 250px;
+            width: 20%; */
+            line-height: 75px;
+            background-color: lightblue;
+            text-align: center;
+            grid-area: H; 
+        }
+    
+        #I {
+            /* height: 150px;
+            width: 80%; */
+            line-height: 75px;
+            background-color: orange;
+            text-align: center;
+            grid-area: I; 
+        }
+    } 
